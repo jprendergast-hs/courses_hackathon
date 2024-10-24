@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Board</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="search-bar">
+                <!-- <img src="file:///Users/jprendergast/courses_hackathon/flask_app/static/hs_logo.png"> -->
+                <input type="text" placeholder="Search jobs">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feed</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">Career Center</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <!-- Job Listings Section -->
+            <section class="job-listings">
+                <h2>Available Jobs</h2>
+                <ul id="job-list">
+                    <!-- Job titles will be populated here by JavaScript -->
+                </ul>
+            </section>
+
+            <!-- Job Detail Section -->
+            <section class="job-details">
+                <h2 id="job-title">Job Title</h2>
+                <p id="job-company">Company</p>
+                <p id="job-description">Job Description</p>
+                <h3>Level up with Udemy!</h3>
+                <ul id="course-list"></ul>
+            </section>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

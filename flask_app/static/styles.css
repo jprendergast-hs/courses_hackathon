@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #d3fb52;
+    padding: 15px 30px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: right;
+    width: 100%;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+header .search-bar button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .notifications {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .notifications .alert-toggle,
+header .notifications .inbox-notification {
+    font-size: 0.9rem;
+    color: #0073e6;
+    cursor: pointer;
+}
+
+/* Layout Container */
+.container {
+
+    display: flex;
+    height: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e6e6e6;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f8ff;
+    color: #0073e6;
+}
+
+/* Main Content */
+.content {
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Job Listings Section */
+.job-listings {
+    width: 35%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    height: fit-content;
+}
+
+.job-listings h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.job-listings ul {
+    list-style: none;
+}
+
+.job-listings ul li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.job-listings ul li:hover {
+    background-color: #f9f9f9;
+}
+
+.job-listings ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    display: block;
+}
+
+/* Job Details Section */
+.job-details {
+    width: 65%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.job-details p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Courses Section */
+.course-list {
+    margin-top: 30px;
+    width: 35%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.course-list h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.course-list ul {
+    list-style: none;
+}
+
+.course-list ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.course-list ul li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.course-list ul li span {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    background-color: #0073e6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+button.secondary {
+    background-color: #ffffff;
+    color: #0073e6;
+    border: 2px solid #0073e6;
+}
+
+button.secondary:hover {
+    background-color: #f0f8ff;
+}
